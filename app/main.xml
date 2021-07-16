@@ -1,0 +1,15 @@
+<Page navigatingTo="navigatingTo">
+    <ScrollView class="container">
+        <Repeater items="{{ launches }}">
+            <Repeater.itemTemplate>
+                <GridLayout class="card" columns="*, *" rows="*, *, *">
+                    <Label class="name" row="0" col="0" text="{{ name }}"/>
+                    <Label class="id" horizontalAlignment="right" row="0" col="1" text="{{ id }}"/>
+                    <Label android:systemIcon="ic_menu_search"></Label>
+                    <Label class="id" row="1" col="0" text="{{ date_utc }}"/>
+                    <Label class="id" row="2" col="0" text="{{ date_local }}"/>
+                </GridLayout>
+            </Repeater.itemTemplate>
+        </Repeater>
+    </ScrollView>
+</Page>
