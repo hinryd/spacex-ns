@@ -1,0 +1,14 @@
+<Page loaded="pageLoaded">
+    <ActionBar title="SpaceX" />
+    <ScrollView class="container">
+        <Repeater items="{{ launches }}">
+            <Repeater.itemTemplate>
+                <GridLayout class="card" rows="*, *, *" tap="{{ handler }}">
+                    <Label class="name" row="0" col="0" text="{{ name }}" />
+                    <Label class="time" horizontalAlignment="right" row="0" col="1" text="{{ date_relative }}"/>
+                    <Label class="id" row="1" col="0" text="{{ id }}"/>
+                </GridLayout>
+            </Repeater.itemTemplate>
+        </Repeater>
+    </ScrollView>
+</Page>

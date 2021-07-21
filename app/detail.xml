@@ -1,0 +1,11 @@
+<Page loaded="pageLoaded">
+    <ActionBar title="{{ launchDetail.name }}" />
+    <FlexboxLayout class="detail-container" flexDirection="column">
+        <TextView editable="false">
+            <FormattedString>
+                <Span text="{{ launchString }}" color="black" />
+            </FormattedString>
+        </TextView>
+        <Button class="detail-button" text="Back" tap="{{ goBack }}" />
+    </FlexboxLayout>
+</Page>

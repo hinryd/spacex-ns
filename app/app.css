@@ -25,24 +25,44 @@ button.-primary {
 }
 
 .container {
-    background-color: #787a91;
+    background-color: #fff;
 }
 
 .card {
-    background-color: #141e61;
+    background-color: #fff;
     padding: 20;
     margin: 10, 20;
     border-radius: 15;
-    box-shadow: 0 3px 10px #aaa;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .card .name {
-    color: #eee;
+    color: #141e61;
     font-weight: bold;
     font-size: 20;
+}
+
+.card .time {
+    color: #aaa;
+    font-size: 11;
 }
 
 .card .id {
     color: #aaa;
     font-size: 10;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.detail-container {
+    background-color: #fff;
+}
+
+.detail-content {
+    margin: 10;
+    font-size: 10px;
+}
+
+.detail-button {
+    height: 300px;
+    margin: 0;
 }
